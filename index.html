@@ -5,11 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <script></script>
+    <script src="app.js"></script>
     <title>Tlak</title>
 </head>
 <body>
     <h1>Tlak</h1>
 
+    <p>
+        <label for="">Síla [N]</label>
+        <form action="">
+            <textarea name="a" id="a" placeholder="Síla v [N]"></textarea> 
+        </form>
+        <br>
+        <label for="">Plocha [m^]:</label>
+        <form action="">
+            <textarea name="b" id="b" placeholder="Plocha v [m^]"></textarea>
+            
+        </form>
+        <br>
+        <label for="">Tlak[Pa]:</label>
+        <form action="">
+            <textarea name="b" id="c" placeholder="Tlak v [Pa]"></textarea>
+            
+        </form>
+        <br>
+        <input type="button" value="Spočítat" onclick="spocitat()">
+    </p>
+    <label for="" id="text"></label>
 </body>
 </html>
