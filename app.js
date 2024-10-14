@@ -32,17 +32,19 @@ function spocitat(){
                 if (isNaN(hodnota_a)){
                     vysledek = hodnota_b * hodnota_c;
                     document.getElementById('a').innerText = vysledek;
+                    document.getElementById('text').innerText = "";
                     spocitat();
                 }
                 else{
                     if (isNaN(hodnota_b)){
                         if (hodnota_c === 0){
                             document.getElementById('text').innerText = "Dělení nulou";
-                            spocitat();
                         }
                         else{
                             vysledek = hodnota_a / hodnota_c;
                             document.getElementById('b').innerText = vysledek;
+                            document.getElementById('text').innerText = "";
+                            spocitat();
                         }
                         
                     }
@@ -50,11 +52,13 @@ function spocitat(){
                         if (isNaN(hodnota_c)){
                             if (hodnota_b === 0){
                                 document.getElementById('text').innerText = "Dělení nulou";
-                                spocitat();
+                            
                             }
                             else{
                                 vysledek = hodnota_a / hodnota_b;
                                 document.getElementById('c').innerText = vysledek;
+                                document.getElementById('text').innerText = "";
+                                spocitat();
                             }
                         }
                     }
