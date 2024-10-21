@@ -31,7 +31,7 @@ function spocitat(){
             else{
                 if (isNaN(hodnota_a)){
                     vysledek = hodnota_b * hodnota_c;
-                    document.getElementById('a').innerText = vysledek;
+                    document.getElementById('a').value = vysledek;
                     document.getElementById('text').innerText = "";
                     spocitat();
                 }
@@ -42,7 +42,7 @@ function spocitat(){
                         }
                         else{
                             vysledek = hodnota_a / hodnota_c;
-                            document.getElementById('b').innerText = vysledek;
+                            document.getElementById('b').value = vysledek;
                             document.getElementById('text').innerText = "";
                             spocitat();
                         }
@@ -56,7 +56,7 @@ function spocitat(){
                             }
                             else{
                                 vysledek = hodnota_a / hodnota_b;
-                                document.getElementById('c').innerText = vysledek;
+                                document.getElementById('c').value = vysledek;
                                 document.getElementById('text').innerText = "";
                                 spocitat();
                             }
